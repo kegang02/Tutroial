@@ -1,0 +1,173 @@
+{
+  "main": {
+    "id": "9c43e1e564dd40a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "d397012812843290",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2eebe458600132d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "O2Physics/O2Physics安装.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "O2Physics安装"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8fb4191b2fb2d837",
+    "type": "split",
+    "children": [
+      {
+        "id": "fdeae0eddcac0796",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "277b69f09b939589",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "c70882b62b8c226b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "7876eec2e1111a74",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "37743d86bd6892c3",
+    "type": "split",
+    "children": [
+      {
+        "id": "9bf4e01623bda50c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58800d7b8df69e43",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "O2Physics/O2Physics安装.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "O2Physics安装 的反向链接列表"
+            }
+          },
+          {
+            "id": "4dcb53b0c736966b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "O2Physics/O2Physics安装.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "O2Physics安装 的出链列表"
+            }
+          },
+          {
+            "id": "a3ad5755945aef96",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "348c34f684bfb620",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "O2Physics/O2Physics安装.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "O2Physics安装 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "f2eebe458600132d",
+  "lastOpenFiles": []
+}
