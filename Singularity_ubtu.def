@@ -1,0 +1,49 @@
+Bootstrap: library
+From: ubuntu:20.04
+
+
+
+%post
+    # Update the package list
+    apt-get update
+    TZ=Asia/Dubai
+    ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone    
+
+    # Install essential packages
+    apt-get install -y build-essential
+    apt-get install -y python3
+    apt-get install -y python3-pip
+    apt-get install -y emacs
+    apt-get install -y wget curl vim git nano htop net-tools iputils-ping unzip tar gzip less screen less sudo 
+    sudo  apt install -y curl libcurl4-gnutls-dev build-essential gfortran libmysqlclient-dev xorg-dev libglu1-mesa-dev libfftw3-dev libxml2-dev git unzip autoconf automake autopoint texinfo gettext libtool libtool-bin pkg-config bison flex libperl-dev libbz2-dev swig liblzma-dev libnanomsg-dev rsync lsb-release environment-modules libglfw3-dev libtbb-dev python3-dev python3-venv python3-pip graphviz libncurses-dev software-properties-common gtk-doc-tools
+
+    # Clean up
+    apt-get clean
+    rm -rf /var/lib/apt/lists/*
+
+    # Create a custom .bashrc
+    echo 'export PATH=/usr/local/bin:$PATH' >> /root/.bashrc
+    echo 'alias ll="ls -la"' >> /root/.bashrc
+    echo 'alias o2p="alienv enter O2Physics/latest"' >> /root/.bashrc	
+    echo 'alias emacs="emacs -nw"' >> /root/.bashrc
+
+    mkdir -p /WorkSpace
+    mkdir -p /WorkSpace2
+    mkdir -p /home/zqing
+
+%environment
+    # Ensure the PATH is set correctly
+    export PATH=/usr/local/bin:$PATH
+    export ALIBUILD_WORK_DIR="/WorkSpace2/zqing/alice/sw"
+    eval "$(alienv shell-helper)"
+    export HOME=/home/zqing
+    if [ -f /home/zqing/.bashrc ]; then
+        source /home/zqing/.bashrc
+    fi
+    
+%labels
+    Author Xiaozhi Bai
+    Version 1.0
+
+%help
+    This is an example Singularity container based on Ubuntu 20.04.
