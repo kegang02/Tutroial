@@ -8,6 +8,7 @@
 
 # 1.网络代理设置
 
+
 （1）将clash主界面各选项按钮设置为如图所示：
 ![[Pasted image 20250713154113.png]]
 注意这里的Port端口不要自己更改，记住自己是多少就行，这里例子为7890。
@@ -21,6 +22,7 @@ export https_proxy="http://10.162.253.177:7890"
 ```
 
 # 2.容器下载与安装
+
 
 我们一般在容器内进行O2的安装以保持环境不会互相干扰，组内目前采用singularity容器。
 
@@ -62,6 +64,7 @@ alias start='sudo singularity shell --bind /WorkSpace --bind /home/username --bi
 完成后终端运行source ~/.bashrc激活更改，往后运行start便可进入容器环境。
 
 # 3.O2Physics安装
+
 
 **注意：以下所有步骤均在容器环境内进行。**
 
@@ -137,6 +140,7 @@ aliBuild build O2Physics
 完成最终O2Physics的安装，该过程耗时较长（一天左右），且须注意全程网络稳定，电脑请勿进入睡眠状态。若安装过程中出现git相关报错一般为网络波动所导致，安装进度不会丢失，重新运行`aliBuild build O2Physics`即可。
 
 # 4.最终步骤
+
 
 安装完成后运行
 ```
